@@ -41,7 +41,7 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-[#111] border border-[#222] text-[#888] text-xs font-medium px-3 py-1.5 rounded-full mb-6">
             <span className="w-1.5 h-1.5 bg-green-400 rounded-full"></span>
-            India's Premier College Discovery Platform
+            India&apos;s Premier College Discovery Platform
           </div>
           <h1 className="text-5xl font-black text-white mb-4 leading-tight tracking-tight">
             Find Your<br />

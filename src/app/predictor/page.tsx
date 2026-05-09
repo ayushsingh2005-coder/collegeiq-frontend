@@ -59,7 +59,7 @@ export default function PredictorPage() {
             Find Your <span className="text-[#4f8ef7]">Best Fit</span>
           </h1>
           <p className="text-[#555] text-base">
-            Enter your exam and rank — we'll show colleges you can get into
+            Enter your exam and rank — we&apos;ll show colleges you can get into
           </p>
         </div>
 

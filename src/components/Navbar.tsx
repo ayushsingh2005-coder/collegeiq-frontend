@@ -17,21 +17,18 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
-            <Link href="/" className="flex items-center gap-2.5">
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="32" height="32" rx="8" fill="url(#grad)"/>
-    <path d="M8 20L16 8L24 20H8Z" fill="white" fillOpacity="0.15"/>
-    <path d="M10 20L16 11L22 20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    <circle cx="16" cy="22" r="2" fill="white"/>
-    <defs>
-      <linearGradient id="grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-        <stop offset="0%" stopColor="#4f8ef7"/>
-        <stop offset="100%" stopColor="#7c3aed"/>
-      </linearGradient>
-    </defs>
-  </svg>
-  
-</Link>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="url(#grad)"/>
+              <path d="M8 20L16 8L24 20H8Z" fill="white" fillOpacity="0.15"/>
+              <path d="M10 20L16 11L22 20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <circle cx="16" cy="22" r="2" fill="white"/>
+              <defs>
+                <linearGradient id="grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#4f8ef7"/>
+                  <stop offset="100%" stopColor="#7c3aed"/>
+                </linearGradient>
+              </defs>
+            </svg>
             <span className="font-bold text-xl text-white tracking-tight">
               College<span className="text-[#4f8ef7]">IQ</span>
             </span>
@@ -44,6 +41,9 @@ export default function Navbar() {
             </Link>
             <Link href="/compare" className="text-[#888] hover:text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-[#1a1a1a] transition">
               Compare
+            </Link>
+            <Link href="/predictor" className="text-[#888] hover:text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-[#1a1a1a] transition">
+              Predictor
             </Link>
             {user && (
               <Link href="/saved" className="text-[#888] hover:text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-[#1a1a1a] transition">
@@ -90,6 +90,7 @@ export default function Navbar() {
           <div className="md:hidden py-4 border-t border-[#222] space-y-1">
             <Link href="/" className="block px-3 py-2 text-[#888] hover:text-white hover:bg-[#1a1a1a] rounded-lg text-sm">Colleges</Link>
             <Link href="/compare" className="block px-3 py-2 text-[#888] hover:text-white hover:bg-[#1a1a1a] rounded-lg text-sm">Compare</Link>
+            <Link href="/predictor" className="block px-3 py-2 text-[#888] hover:text-white hover:bg-[#1a1a1a] rounded-lg text-sm">Predictor</Link>
             {user && <Link href="/saved" className="block px-3 py-2 text-[#888] hover:text-white hover:bg-[#1a1a1a] rounded-lg text-sm">Saved</Link>}
             {user ? (
               <button onClick={handleLogout} className="block w-full text-left px-3 py-2 text-[#888] hover:text-white hover:bg-[#1a1a1a] rounded-lg text-sm">Logout</button>

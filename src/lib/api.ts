@@ -83,4 +83,11 @@ export const api = {
     });
     return res.json();
   },
+  predict: async (exam: string, rank: number, course?: string) => {
+  const params = new URLSearchParams({ exam, rank: String(rank) });
+  if (course) params.append('course', course);
+  const res = await fetch(`${BASE}/api/predictor?${params}`);
+  if (!res.ok) throw new Error('Prediction failed');
+  return res.json();
+},
 };
